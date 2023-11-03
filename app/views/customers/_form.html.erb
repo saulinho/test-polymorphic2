@@ -1,0 +1,9 @@
+<%= form_with(model: customer) do |form| %>
+  <%= form.fields_for :person_attributes, customer.person do |form_fields| %>
+    <%= form_fields.label :name %>
+    <%= form_fields.text_field :name %>
+  <% end %>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

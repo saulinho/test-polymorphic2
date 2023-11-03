@@ -1,0 +1,3 @@
+# Polymorphic example
+
+Person <- Customer
